@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* YourStyles.css */
+
+.slide-bottom-left-enter {
+  transform: translate(-100%, 100%);
+  opacity: 0.01;
+}
+
+.slide-bottom-left-enter-active {
+  transform: translate(0, 0);
+  opacity: 1;
+  transition: transform 750ms ease-in-out, opacity 750ms ease-in-out;
+}
+
+.slide-bottom-left-exit {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.slide-bottom-left-exit-active {
+  transform: translate(-100%, 100%);
+  opacity: 0.01;
+  transition: transform 750ms ease-in-out, opacity 750ms ease-in-out;
+}
+
+/* Resmin sol alttan kayarak gelmesini sağlayan özel stil */
+.slide-element {
+  will-change: transform;
+}
+
+/* YourStyles.css */
+
+.slide-from-right-enter {
+  transform: translateX(100%);
+  opacity: 0.01;
+}
+
+.slide-from-right-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+
+.slide-from-right-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-from-right-exit-active {
+  transform: translateX(100%);
+  opacity: 0.01;
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+}
+
+/* Sağdan kayarak gelme efektini sağlayan özel stil */
+.slide-element {
+  will-change: transform;
+}
+
